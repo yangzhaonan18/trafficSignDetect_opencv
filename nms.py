@@ -34,7 +34,6 @@ def nms(list, iou, type="removeIn"):
                         index_remove.append(j)
                     pass
 
-
             if type == "removeIn":
                 # 去除掉 候选区域中间的区域
                 # if cal_IOU(list[i], list[j]) < 0.4:
