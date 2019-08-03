@@ -3,6 +3,8 @@ __pycache__/
 *.py[cod]
 *$py.class
 
+
+.idea
 # C extensions
 *.so
 
@@ -88,6 +90,7 @@ celerybeat-schedule
 *.sage.py
 
 # Environments
+
 .env
 .venv
 env/
@@ -113,3 +116,5 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+.idea/workspace.xml
+.idea/workspace.xml
