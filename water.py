@@ -87,6 +87,7 @@ def find_water_objects(image):
     return rectangleList
 
 
+
 if __name__ == "__main__":
     image = cv2.imread("image//coin2.png")  # 读取图片
     cv2.namedWindow("input image", cv2.WINDOW_AUTOSIZE)  # 创建GUI窗口,形式为自适应

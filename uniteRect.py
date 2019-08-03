@@ -92,6 +92,7 @@ def unite_rect(rectA, rectB, rectC, color):
         rectABC[3] = max(rectA[1] + rectA[3], rectB[1] + rectB[3], rectC[1] + rectC[3], rectD[1] + rectD[3]) - min(
             rectA[1], rectB[1], rectC[1], rectD[1]) + 1
 
+
         # rectABC[0] = int(rectABC[0] - rectABC[2] * 0.1)
         # rectABC[1] = int(rectABC[1] - rectABC[3] * 0.1)
         # rectABC[2] = int(rectABC[2] * 1.2)

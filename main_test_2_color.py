@@ -11,6 +11,7 @@ import time
 
 
 
+
 def filter_colors(image):
     """
     Filter the image to include only yellow and white pixels
