@@ -5,6 +5,9 @@ __pycache__/
 
 
 .idea
+classfication/fashionmnist/
+
+
 # C extensions
 *.so
 

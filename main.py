@@ -143,10 +143,9 @@ def getSign(img, color):
         cv2.drawContours(img_black, [contours[i]], -1, (255, 255, 255), -1)  # 使用黑色作为背景，白色最为感兴趣的区域。img_black 只用作分水岭算法使用。
         cv2.drawContours(img_copy, [contours[i]], -1, (2, 0, 155), 2)  # 使用黑色作为背景，白色最为感兴趣的区域。img_black 只用作分水岭算法使用。
 
-
         x, y, w, h = cv2.boundingRect(contours[i])
         # 只添加满足一定条件的矩形 round是四舍五入 注意这里没有考虑 遮挡和处于图像边缘的目标（
-        # 换句话说，遮挡和边缘遮挡目标还无法检测到。）。
+        # 换句话说，遮挡和边缘遮挡目标还无法检测到）
         if max(round(w / h), round(h / w)) in [1, 2, 3] and w >= 5 and h >= 5:
             if color in ["red", "white"] and w >= 10 and h >= 10 and max(round(w / h), round(h / w)) == 1:  # 1:1 方正的区域直接作为候选区域
                 rectangleList.append([x, y, w, h])
