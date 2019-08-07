@@ -27,7 +27,7 @@ def nms(list, iou, type="removeIn"):
                         index_remove.append(i)
                     pass
                 else:  # 去除掉 候选区域中间的区域
-                    if cal_IOU(list[i], list[j]) < 0.3 or cal_IOU(list[i], list[j]) > 0.8:
+                    if cal_IOU(list[i], list[j]) > 0.8:
                         # 两者存在包含关系的时候 删除 小的那个
                         if AinB(list[i], list[j]):
                             index_remove.append(i)
@@ -35,7 +35,7 @@ def nms(list, iou, type="removeIn"):
                             index_remove.append(j)
 
     for i in range(len(list)):
-        if list[i][2] < 15 or list[i][3] < 15:
+        if list[i][2] < 10 or list[i][3] < 10:
             index_remove.append(i)
 
     for i in range(len(list)):

@@ -115,7 +115,7 @@ def findContours(img, color, mask):
 
     gray = cv2.cvtColor(BinColor, cv2.COLOR_BGR2GRAY)  # 转成灰色图像
     ret, BinThings = cv2.threshold(gray, 1, 255, cv2.THRESH_BINARY)  # 灰色图像二值化（变黑白图像）
-    # if color == "yellow":
+    # if color == "red":
     #     cv2.imshow("asdf", BinThings)
     #     cv2.waitKey(0)
 
@@ -172,7 +172,7 @@ def getSign(img, color):
 
 # 读取图片
 # img_path = "image//coin2.png"
-img_path = "image//02.png"
+img_path = "image//51.png"
 img = cv2.imread(img_path, cv2.IMREAD_COLOR)
 
 # 找到红色区域的坐标
@@ -190,7 +190,7 @@ rectangleList_red = rectangleList_red01
 
 # 提取白色的情况
 rectangleList = getSign(img, color="white")
-# rectangleList_white = rectangleList
+
 rectangleList_white = unite2white(rectangleList, iou=0.01)  # 合并被分成两种白色的情况
 
 # 提取蓝色的情况
