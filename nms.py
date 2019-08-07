@@ -26,22 +26,17 @@ def nms(list, iou, type="removeIn"):
                     else:
                         index_remove.append(i)
                     pass
-                else:
-                    # 两者存在包含关系的时候 删除 小的那个
-                    if AinB(list[i], list[j]):
-                        index_remove.append(i)
-                    if AinB(list[j], list[i]):
-                        index_remove.append(j)
-                    pass
+                else:  # 去除掉 候选区域中间的区域
+                    if cal_IOU(list[i], list[j]) < 0.3 or cal_IOU(list[i], list[j]) > 0.8:
+                        # 两者存在包含关系的时候 删除 小的那个
+                        if AinB(list[i], list[j]):
+                            index_remove.append(i)
+                        if AinB(list[j], list[i]):
+                            index_remove.append(j)
 
-            if type == "removeIn":
-                # 去除掉 候选区域中间的区域
-                # if cal_IOU(list[i], list[j]) < 0.4:
-                if AinB(list[i], list[j]):
-                    index_remove.append(i)
-                if AinB(list[j], list[i]):
-                    index_remove.append(j)
-                pass
+    for i in range(len(list)):
+        if list[i][2] < 15 or list[i][3] < 15:
+            index_remove.append(i)
 
     for i in range(len(list)):
         if i not in index_remove:

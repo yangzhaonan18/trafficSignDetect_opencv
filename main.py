@@ -115,9 +115,9 @@ def findContours(img, color, mask):
 
     gray = cv2.cvtColor(BinColor, cv2.COLOR_BGR2GRAY)  # 转成灰色图像
     ret, BinThings = cv2.threshold(gray, 1, 255, cv2.THRESH_BINARY)  # 灰色图像二值化（变黑白图像）
-    if color == "yellow":
-        cv2.imshow("asdf", BinThings)
-        cv2.waitKey(0)
+    # if color == "yellow":
+    #     cv2.imshow("asdf", BinThings)
+    #     cv2.waitKey(0)
 
     _, contours, hierarchy = cv2.findContours(BinThings, cv2.RETR_CCOMP, cv2.CHAIN_APPROX_SIMPLE)
     # _, contours, hierarchy = cv2.findContours(BinThings, cv2.RETR_EXTERNAL, cv2.CHAIN_APPROX_SIMPLE)  # 只要外面那一层的轮廓 contours
@@ -172,7 +172,7 @@ def getSign(img, color):
 
 # 读取图片
 # img_path = "image//coin2.png"
-img_path = "image//100.png"
+img_path = "image//02.png"
 img = cv2.imread(img_path, cv2.IMREAD_COLOR)
 
 # 找到红色区域的坐标
@@ -212,11 +212,11 @@ rectangleList_yellow = nms(rectangleList_yellow01, iou=0.1, type="removeIn")
 
 
 rectangleList_add = []
-# rectangleList_add.extend(rectangleList_red)
-# rectangleList_add.extend(rectangleList_blue)
+rectangleList_add.extend(rectangleList_red)
+rectangleList_add.extend(rectangleList_blue)
 #
 rectangleList_add.extend(rectangleList_yellow)
-# rectangleList_add.extend(rectangleList_white)
+rectangleList_add.extend(rectangleList_white)
 
 print("The number of rectangle is ", len(rectangleList))
 
