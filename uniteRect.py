@@ -1,9 +1,10 @@
-#  找到满足条件的两个矩形
+# -*- coding=utf-8 -*-
+# py37
+
+#  找到满足条件的两个矩形，合并矩形
 import numpy as np
 
 # from nms import nms
-
-
 
 
 def cal_IOU(rectA, rectB):

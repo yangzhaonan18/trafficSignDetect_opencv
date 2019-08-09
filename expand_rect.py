@@ -1,4 +1,5 @@
-# -*- codint=utf-8 -*-
+# -*- coding=utf-8 -*-
+# py37
 
 
 import numpy as np

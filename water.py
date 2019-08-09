@@ -1,4 +1,7 @@
-# 分水岭算法
+# -*- coding=utf-8 -*-
+# py3
+# 时间：2019年8月7日20:02:02
+# 分水岭算法，分割连续相连的红色交通标志
 
 import numpy as np
 import cv2

@@ -1,4 +1,5 @@
-import numpy as np
+# -*- coding=utf-8 -*-
+# py37
 
 from uniteRect import cal_IOU, AinB
 
