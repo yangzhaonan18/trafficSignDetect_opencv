@@ -2,15 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f1a1d139-e597-4871-8dbc-85ed6c4b21d9" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/getRectangleList.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/showAndCutSign.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testOpenCV/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/detectLine.py" beforeDir="false" afterPath="$PROJECT_DIR$/detectLine.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/expand_rect.py" beforeDir="false" afterPath="$PROJECT_DIR$/expand_rect.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/getRectangleList.py" beforeDir="false" afterPath="$PROJECT_DIR$/getRectangleList.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/justForTest.py" beforeDir="false" afterPath="$PROJECT_DIR$/justForTest.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main_test_2_color.py" beforeDir="false" afterPath="$PROJECT_DIR$/main_test_2_color.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/nms.py" beforeDir="false" afterPath="$PROJECT_DIR$/nms.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/showAndCutSign.py" beforeDir="false" afterPath="$PROJECT_DIR$/showAndCutSign.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/uniteRect.py" beforeDir="false" afterPath="$PROJECT_DIR$/uniteRect.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/water.py" beforeDir="false" afterPath="$PROJECT_DIR$/water.py" afterDir="false" />
     </list>
@@ -26,12 +25,28 @@
         <entry file="file://$PROJECT_DIR$/getRectangleList.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="194">
-              <caret line="166" selection-start-line="166" selection-end-line="166" />
+              <caret line="165" selection-start-line="165" selection-end-line="165" />
               <folding>
                 <element signature="e#114#124#0" expanded="true" />
-                <element signature="e#1104#2757#0" />
-                <element signature="e#2800#4274#0" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/expand_rect.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="81">
+              <caret line="3" selection-start-line="3" selection-end-line="3" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/detectLine.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="216">
+              <caret line="8" column="7" lean-forward="true" selection-start-line="8" selection-start-column="7" selection-end-line="8" selection-end-column="7" />
             </state>
           </provider>
         </entry>
@@ -39,38 +54,34 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="356">
-              <caret line="31" column="13" selection-start-line="31" selection-start-column="13" selection-end-line="31" selection-end-column="13" />
-              <folding>
-                <element signature="e#53#59#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="265">
+              <caret line="18" column="31" lean-forward="true" selection-start-line="18" selection-start-column="31" selection-end-line="18" selection-end-column="31" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://D:/Program Files/Anaconda3/Lib/ntpath.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="202">
-              <caret line="114" selection-start-line="114" selection-end-line="114" />
+        <entry file="file://$PROJECT_DIR$/hs_err_pid27416.log">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="162">
+                <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
+              </first_editor>
+              <second_editor />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://D:/Program Files/Anaconda3/Lib/genericpath.py">
+        <entry file="file://$PROJECT_DIR$/nms.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="548">
-              <caret line="148" selection-start-line="148" selection-end-line="148" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/.PyCharm2019.1/system/python_stubs/-952285868/cv2/__init__.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="731">
-              <caret line="7310" column="62" selection-start-line="7310" selection-start-column="62" selection-end-line="7310" selection-end-column="62" />
+            <state relative-caret-position="270">
+              <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
             </state>
           </provider>
         </entry>
@@ -78,33 +89,10 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/showAndCutSign.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="529">
-              <caret line="37" selection-start-line="37" selection-end-line="38" />
+            <state relative-caret-position="-32">
+              <caret line="2" column="15" selection-start-line="2" selection-start-column="15" selection-end-line="2" selection-end-column="15" />
               <folding>
                 <element signature="e#30#40#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/testOpenCV/main.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="184">
-              <caret line="26" lean-forward="true" selection-start-line="26" selection-end-line="26" />
-              <folding>
-                <element signature="e#0#37#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/water.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <folding>
-                <element signature="e#9#27#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -113,17 +101,20 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/uniteRect.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="27">
-              <caret line="1" column="6" selection-end-line="1" selection-end-column="6" />
+            <state relative-caret-position="143">
+              <caret line="195" column="10" selection-start-line="195" selection-start-column="10" selection-end-line="195" selection-end-column="10" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/nms.py">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/water.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="27">
-              <caret line="1" column="6" selection-start-line="1" selection-start-column="6" selection-end-line="1" selection-end-column="6" />
+            <state relative-caret-position="292">
+              <caret line="84" lean-forward="true" selection-start-line="84" selection-end-line="84" />
+              <folding>
+                <element signature="e#75#93#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -154,25 +145,25 @@
         <option value="$PROJECT_DIR$/unite2white.py" />
         <option value="$PROJECT_DIR$/unite4blue.py" />
         <option value="$PROJECT_DIR$/yellow.py" />
-        <option value="$PROJECT_DIR$/detectLine.py" />
         <option value="$PROJECT_DIR$/just.py" />
-        <option value="$PROJECT_DIR$/main_test_2_color.py" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/classfication/main.py" />
-        <option value="$PROJECT_DIR$/water.py" />
-        <option value="$PROJECT_DIR$/uniteRect.py" />
-        <option value="$PROJECT_DIR$/README.md" />
-        <option value="$PROJECT_DIR$/expand_rect.py" />
-        <option value="$PROJECT_DIR$/justForTest.py" />
-        <option value="$PROJECT_DIR$/nms.py" />
-        <option value="$PROJECT_DIR$/getRectangleList.py" />
         <option value="$PROJECT_DIR$/main.py" />
-        <option value="$PROJECT_DIR$/showAndCutSign.py" />
         <option value="$PROJECT_DIR$/testOpenCV/main.py" />
+        <option value="$PROJECT_DIR$/main_test_2_color.py" />
+        <option value="$PROJECT_DIR$/justForTest.py" />
+        <option value="$PROJECT_DIR$/getRectangleList.py" />
+        <option value="$PROJECT_DIR$/expand_rect.py" />
+        <option value="$PROJECT_DIR$/detectLine.py" />
+        <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/nms.py" />
+        <option value="$PROJECT_DIR$/showAndCutSign.py" />
+        <option value="$PROJECT_DIR$/uniteRect.py" />
+        <option value="$PROJECT_DIR$/water.py" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="1377" />
     <option name="y" value="-192" />
     <option name="width" value="1936" />
@@ -396,7 +387,7 @@
       <updated>1564403165838</updated>
       <workItem from="1564403171001" duration="76756000" />
       <workItem from="1564717812353" duration="55469000" />
-      <workItem from="1565165729363" duration="13512000" />
+      <workItem from="1565165729363" duration="14512000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <created>1564837504854</created>
@@ -409,10 +400,10 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="145737000" />
+    <option name="totallyTimeSpent" value="146737000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1432" y="-192" width="1936" height="1056" extended-state="7" />
+    <frame x="1432" y="-192" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17324094" />
@@ -487,9 +478,6 @@
     <SUITE FILE_PATH="coverage/ChangShuSign19$main__1_.coverage" NAME="main (1) Coverage Results" MODIFIED="1564919316277" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/classfication" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/image/20.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/image/32.jpg">
       <provider selected="true" editor-type-id="images" />
     </entry>
@@ -620,70 +608,6 @@
     <entry file="file://$PROJECT_DIR$/image/01.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="54">
-            <caret line="2" column="3" selection-start-line="2" selection-start-column="3" selection-end-line="2" selection-end-column="3" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/detectLine.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="5" selection-start-line="5" selection-end-line="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/expand_rect.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="81">
-          <caret line="3" selection-start-line="3" selection-end-line="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/justForTest.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="27">
-          <caret line="1" column="6" selection-start-line="1" selection-start-column="6" selection-end-line="1" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/main_test_2_color.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="243">
-          <caret line="9" selection-start-line="9" selection-end-line="9" />
-          <folding>
-            <element signature="e#31#41#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/nms.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="27">
-          <caret line="1" column="6" selection-start-line="1" selection-start-column="6" selection-end-line="1" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/water.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="e#9#27#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/uniteRect.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="27">
-          <caret line="1" column="6" selection-end-line="1" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/.PyCharm2019.1/system/python_stubs/-952285868/cv2/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="731">
@@ -705,44 +629,107 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/testOpenCV/main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="589">
+          <caret line="41" lean-forward="true" selection-start-line="41" selection-end-line="41" />
+          <folding>
+            <element signature="e#0#37#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main_test_2_color.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="81">
+          <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
+          <folding>
+            <element signature="e#31#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/justForTest.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hs_err_pid27416.log">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/getRectangleList.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="194">
-          <caret line="166" selection-start-line="166" selection-end-line="166" />
+          <caret line="165" selection-start-line="165" selection-end-line="165" />
           <folding>
             <element signature="e#114#124#0" expanded="true" />
-            <element signature="e#1104#2757#0" />
-            <element signature="e#2800#4274#0" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/expand_rect.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="81">
+          <caret line="3" selection-start-line="3" selection-end-line="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/detectLine.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="8" column="7" lean-forward="true" selection-start-line="8" selection-start-column="7" selection-end-line="8" selection-end-column="7" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="356">
-          <caret line="31" column="13" selection-start-line="31" selection-start-column="13" selection-end-line="31" selection-end-column="13" />
-          <folding>
-            <element signature="e#53#59#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="265">
+          <caret line="18" column="31" lean-forward="true" selection-start-line="18" selection-start-column="31" selection-end-line="18" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="162">
+            <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nms.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/uniteRect.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="143">
+          <caret line="195" column="10" selection-start-line="195" selection-start-column="10" selection-end-line="195" selection-end-column="10" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/showAndCutSign.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="529">
-          <caret line="37" selection-start-line="37" selection-end-line="38" />
+        <state relative-caret-position="-32">
+          <caret line="2" column="15" selection-start-line="2" selection-start-column="15" selection-end-line="2" selection-end-column="15" />
           <folding>
             <element signature="e#30#40#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/testOpenCV/main.py">
+    <entry file="file://$PROJECT_DIR$/water.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="184">
-          <caret line="26" lean-forward="true" selection-start-line="26" selection-end-line="26" />
+        <state relative-caret-position="292">
+          <caret line="84" lean-forward="true" selection-start-line="84" selection-end-line="84" />
           <folding>
-            <element signature="e#0#37#0" expanded="true" />
+            <element signature="e#75#93#0" expanded="true" />
           </folding>
         </state>
       </provider>

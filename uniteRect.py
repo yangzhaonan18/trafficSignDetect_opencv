@@ -7,6 +7,7 @@ import numpy as np
 # from nms import nms
 
 
+# 计算交并比
 def cal_IOU(rectA, rectB):
     maxX = max(rectA[0], rectB[0])
     minX = min(rectA[0] + rectA[2], rectB[0] + rectB[2])
@@ -18,7 +19,7 @@ def cal_IOU(rectA, rectB):
     IOU = area_I / area_U
     return IOU
 
-
+#  合并两个矩形框
 def unite_2rect(rectA, rectB):
     rectAB = [0, 0, 0, 0]
     rectAB[0] = min(rectA[0], rectB[0])
@@ -36,7 +37,7 @@ def unite_2rect(rectA, rectB):
 
     return rectAB
 
-
+# 找到 四个矩形框中的第四个矩形框的信息
 def findFourthPoint(rectA, rectB, rectC):
     width = (rectA[2] + rectB[2] + rectC[2]) / 3
     high = (rectA[3] + rectB[3] + rectC[3]) / 3
@@ -73,8 +74,7 @@ def findFourthPoint(rectA, rectB, rectC):
     return rectD
 
 
-
-
+# 合并四个矩形框，即求四个矩形框的外界矩形
 def unite_rect(rectA, rectB, rectC, color):
     rectABC = [0, 0, 0, 0]
     if color == "yellow":  # 直接合并这三个候选区域
@@ -102,14 +102,16 @@ def unite_rect(rectA, rectB, rectC, color):
     return rectABC
 
 
+# 判断A矩形框是否在B矩形框中，
 def AinB(A, B):  # A在B中，A比B小的情况
-
     flag = False
+    # 判断的时候一定要有等号
     if A[0] >= B[0] and A[1] >= B[1] and (A[0] + A[2]) <= (B[0] + B[2]) and (A[1] + A[3]) <= (B[1] + B[3]):
         flag = True
     return flag
 
 
+# 根据矩形框的长宽，来判断是否可能是交通标志
 def haveSignSize(rectA, rectB):  # 各个部分 形状相似
     flag_1 = False  # 判断形状的标志
     flag_2 = False  # 判断是否包含的标志
@@ -124,6 +126,7 @@ def haveSignSize(rectA, rectB):  # 各个部分 形状相似
     return flag_1 and flag_2
 
 
+# 判断AB是否可能合并
 def can_Unite(rectA, rectB, iou):  # 两个区域之间有交集，面积基本相似就认为是满足合并的条件
     flag = False
     if cal_IOU(rectA, rectB) > iou and haveSignSize(rectA, rectB):
@@ -131,6 +134,7 @@ def can_Unite(rectA, rectB, iou):  # 两个区域之间有交集，面积基本�
     return flag
 
 
+# 合并两个白色矩形框
 def unite2white(list, iou):
     # iou = 0.1 white
     list = np.array(list)
@@ -150,6 +154,7 @@ def unite2white(list, iou):
     return unite_list
 
 
+# 遍历在所有的矩形框中，找到满足合并条件的四个矩形框
 def unite4(list, iou, color):
     list = np.array(list)
     print(list.shape)
@@ -179,12 +184,14 @@ def unite4(list, iou, color):
     return unite_list  # 将能合并的目标区域都进行了合并
 
 
+# 合并所有矩形框中的四个蓝色的矩形框 禁止停止标志
 def unite4blue(list, iou):
     unite_list = unite4(list, iou, color="blue")
     unite_list = unite2white(unite_list, iou)  # 将最后的的两个大蓝色框合并成 一个完整的蓝色框。
     return unite_list
 
 
+#  合并所有矩形框中的四个黄色的矩形框 向左 向右形式标志
 def unite4yellow(list, iou):
     unite_list = unite4(list, iou, color="yellow")
     return unite_list

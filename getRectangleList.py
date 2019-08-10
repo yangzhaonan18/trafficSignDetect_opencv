@@ -16,7 +16,6 @@ from expand_rect import expand_yellow, expand_blue
 from nms import nms
 
 
-
 def setColor(img):
     """
     对输入图像进行处理，现在只添加了色域转换，后面还要添加调节图片的饱和度、对比度等信息，方便进行mask 的提取。
@@ -136,7 +135,8 @@ def getSign(img, color):
         # 只添加满足一定条件的矩形 round是四舍五入 注意这里没有考虑 遮挡和处于图像边缘的目标（
         # 换句话说，遮挡和边缘遮挡目标还无法检测到）
         if max(round(w / h), round(h / w)) in [1, 2, 3] and w >= 5 and h >= 5:
-            if color in ["red", "white"] and w >= 10 and h >= 10 and max(round(w / h), round(h / w)) == 1:  # 1:1 方正的区域直接作为候选区域
+            if color in ["red", "white"] and w >= 10 and h >= 10 and max(round(w / h),
+                                                                         round(h / w)) == 1:  # 1:1 方正的区域直接作为候选区域
                 rectangleList.append([x, y, w, h])
                 # cv2.rectangle(img_copy, (x, y), (x + w, y + h), (0, 255, 0), 2)  # 在原图上画出 目标框来  显示使用
             elif color == "yellow" and w >= 10 and h >= 10:
@@ -160,7 +160,6 @@ def getSign(img, color):
 
 
 def getRectangleList(img):
-
     # 找到红色区域的坐标
     colors = ["red", "blue", "orange", "yellow", "black", "white"]
     # 提取红色的情况
@@ -172,7 +171,6 @@ def getRectangleList(img):
     # rectangleList_red01.extend(rectangleList_red04)  # 添加 四合一的结果
     rectangleList_red = rectangleList_red01
     # rectangleList_red = nms(rectangleList_red01, iou=0.5, type="removeIn")
-
 
     # 提取白色的情况
     rectangleList = getSign(img, color="white")
@@ -187,7 +185,6 @@ def getRectangleList(img):
     rectangleList_blue01.extend(rectangleList_blue04)  # 将 合并后的大的 添加到 原来的有很多小的区域里去，
     rectangleList_blue = nms(rectangleList_blue01, iou=0.5, type="removeIn")
 
-
     # # 提取黄色的情况
     rectangleList_yellow01 = getSign(img, color="yellow")  # 提取的黄色标志分为：向左向右行驶，ETC收费站，黄色施工标志
     rectangleList_yellow = rectangleList_yellow01
@@ -195,7 +192,6 @@ def getRectangleList(img):
     rectangleList_yellow04 = unite4yellow(rectangleList_yellow01_, 0.001)
     rectangleList_yellow01.extend(rectangleList_yellow04)
     rectangleList_yellow = nms(rectangleList_yellow01, iou=0.1, type="removeIn")
-
 
     rectangleList_add = []
     rectangleList_add.extend(rectangleList_red)
@@ -211,4 +207,3 @@ def getRectangleList(img):
     rectangleList_nms = nms(rectangleList_add, iou=0.5, type="removeIou")
 
     return rectangleList_nms
-

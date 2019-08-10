@@ -1,9 +1,8 @@
 # -*- coding=utf-8 -*-
 # py37
+#  非极大值抑制，用于最后的的矩形框赛选、排除
 
 from uniteRect import cal_IOU, AinB
-
-
 
 
 def area(rect):
@@ -22,7 +21,8 @@ def nms(list, iou, type="removeIn"):
                 if cal_IOU(list[i], list[j]) > iou and not AinB(list[i], list[j]) and not AinB(list[j], list[i]):
                     # if area(list[i]) > area(list[j]):
                     # 保留两个中比较方正的那个，删除矩形的那个
-                    if max(list[i][2] / list[i][3], list[i][3] / list[i][2]) < max(list[j][2] / list[j][3], list[j][3] / list[j][2]):
+                    if max(list[i][2] / list[i][3], list[i][3] / list[i][2]) < max(list[j][2] / list[j][3],
+                                                                                   list[j][3] / list[j][2]):
                         index_remove.append(j)
                     else:
                         index_remove.append(i)
@@ -45,5 +45,3 @@ def nms(list, iou, type="removeIn"):
 
     print("after len(list) = ", len(newList))
     return newList
-
-

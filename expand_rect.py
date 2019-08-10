@@ -5,7 +5,6 @@
 import numpy as np
 
 
-
 def expand_yellow(list):
     list = np.array(list)
     print(list.shape)
@@ -19,6 +18,7 @@ def expand_yellow(list):
                 # list[i][3] = int(list[i][3] * 1.3)
             unite_list.append(list[i])
     return unite_list
+
 
 def expand_blue(list):
     list = np.array(list)

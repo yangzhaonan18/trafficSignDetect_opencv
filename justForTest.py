@@ -3,7 +3,6 @@
 # github 车道线检测的程序
 
 
-
 import matplotlib.pyplot as plt
 import matplotlib.image as mpimg
 import numpy as np
@@ -303,4 +302,3 @@ def annotate_image(input_file):
 
 input_file = "image//51.png"
 annotate_image(input_file)
-

@@ -7,11 +7,6 @@ import numpy as np
 import time
 
 
-
-
-
-
-
 def filter_colors(image):
     """
     Filter the image to include only yellow and white pixels
@@ -25,18 +20,13 @@ def filter_colors(image):
     # white_mask = cv2.inRange(image, lower_white, upper_white)
     # white_image = cv2.bitwise_and(image, image, mask=white_mask)
 
-    lower_white = np.array([0, 0, 43], dtype=np.uint8 )
+    lower_white = np.array([0, 0, 43], dtype=np.uint8)
     upper_white = np.array([180, 43, 255], dtype=np.uint8)
     white_mask = cv2.inRange(img_hsv, lower_white, upper_white)
     white_image = cv2.bitwise_and(image, image, mask=white_mask)
 
     # kernel = np.ones((3, 3), np.uint8)
     # white_image = cv2.morphologyEx(white_image, cv2.MORPH_ERODE, kernel)  # 开运算
-
-
-
-
-
 
     # Filter red pixels
     redLower01 = np.array([0, 43, 46], dtype=np.uint8)  # 部分红
@@ -59,7 +49,6 @@ def filter_colors(image):
 
 img_path = "image//41.png"  # 41 67
 img = cv2.imread(img_path, cv2.IMREAD_COLOR)
-
 
 image = filter_colors(img)
 

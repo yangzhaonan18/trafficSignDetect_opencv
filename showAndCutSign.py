@@ -1,6 +1,6 @@
 # -*- coding=utf-8 -*-
 # py3
-
+# 显示最后的矩形框（候选区域）
 import cv2
 import os
 
@@ -33,6 +33,3 @@ def cutSign(img, List, dir, M, N):
             cv2.imwrite(path, Sign_image)
         except:
             pass
-
-
-
