@@ -17,7 +17,9 @@ names = os.listdir(image_dir)
 for j in range(len(names)):
     name = names[j]
     image_path = os.path.join(image_dir,  name)
+    image_path = "image/00.png"
     print(image_path)
+
     img = cv2.imread(image_path, cv2.IMREAD_COLOR)
     # cv2.imshow("asdf", img)
     # cv2.waitKey(0)
