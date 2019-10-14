@@ -107,7 +107,7 @@ def findContours(img, color, mask):
     #     cv2.imshow("asdf", BinThings)
     #     cv2.waitKey(0)
 
-    _, contours, hierarchy = cv2.findContours(BinThings, cv2.RETR_CCOMP, cv2.CHAIN_APPROX_SIMPLE)
+    contours, hierarchy = cv2.findContours(BinThings, cv2.RETR_CCOMP, cv2.CHAIN_APPROX_SIMPLE)
     # _, contours, hierarchy = cv2.findContours(BinThings, cv2.RETR_EXTERNAL, cv2.CHAIN_APPROX_SIMPLE)  # 只要外面那一层的轮廓 contours
 
     return contours

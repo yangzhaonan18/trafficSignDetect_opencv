@@ -18,7 +18,7 @@ def drawSign(img, rectangleList):
     cv2.waitKey(0)
 
 
-def cutSign(img, List, dir, M, N):
+def cutSign(img, List, dir, M):
     for i in range(len(List)):
         x1 = List[i][0]
         y1 = List[i][1]
@@ -28,7 +28,7 @@ def cutSign(img, List, dir, M, N):
             Sign_image = img[y1:y2, x1:x2]
             Sign_image = cv2.resize(Sign_image, (28, 28))
             print("%6d" % i)
-            path = os.path.join(dir, "%d_%d_%d.jpg" % (M, N, i))
+            path = os.path.join(dir, "%d_%d.jpg" % (M,  i))
             print(path)
             cv2.imwrite(path, Sign_image)
         except:

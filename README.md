@@ -1,8 +1,12 @@
-# ChangShuSign19
-- 使用 OpenCV 基于颜色阈值来提取交通标志
-## 1. 使用的方法
-### 1.1.分水岭算法，用于分割多个相连的红色标志
-### 1.2. 
-## 2. 相关函数
+# Using OpneCV to detect traffic sign
+
+## 1. methods
+
+## 2. how to run 
+
+## 3. results 
+
+## 4. how to adjust the code
+
 
 
