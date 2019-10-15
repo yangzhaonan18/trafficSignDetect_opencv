@@ -1,4 +1,4 @@
-# Using OpneCV to detect traffic sign
+# Using OpneCV to detect traffic sign (without class)
 
 ## 1. methods
 
